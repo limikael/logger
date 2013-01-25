@@ -1,11 +1,8 @@
 <?php
 /**
- * Copyright 2012 X Studios Inc.
+ * Copyright 2013
  * 
- * This file is part of proprietary software and use of this file
- * is strictly prohibited without the written consent of the owner.
- *
- * @author  Nickolas Whiting <nwhiting@xstudiosinc.com>
+ * See the LICENSE file for LICENSE terms.
  */
 
 if (!defined('LOGGER_LOG_LEVEL')) {
