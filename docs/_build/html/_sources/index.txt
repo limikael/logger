@@ -1,5 +1,10 @@
-Logger
-******
+.. Logger documentation master file, created by
+   sphinx-quickstart on Fri Jan 25 12:44:10 2013.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Welcome to Logger's documentation!
+==================================
 
 A super simple logger based on Python's logger.
 
@@ -11,8 +16,6 @@ Download the logger.php file.
 Include the file where you want to log.
 
 .. code-block:: php
-
-    <?php
 
     require_once 'path_to_logger/logger.php';
 
@@ -66,4 +69,11 @@ Creates a new logger and sends output to STDOUT and log file.
         $formatter, '/tmp/foo.log'
     ));
 
+API
+---
 
+.. toctree::
+   :maxdepth: 3
+   :glob:
+
+   logger
