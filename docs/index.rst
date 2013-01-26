@@ -11,24 +11,25 @@ A super simple logger based on Python's logger.
 Installation
 ------------
 
-Download the logger.php file.
+Download the latest_.
 
-Include the file where you want to log.
+_latest: https://github.com/prggmr/logger/archive/master.zip
+
+Include in configuration.
 
 .. code-block:: php
 
-    require_once 'path_to_logger/logger.php';
-
+    require_once 'logger.php';
 
 Logging
 -------
 
-Logger provides the API functions ``logger``, ``debug``, ``info``, ``warning`` 
-``error`` and ``critical`` for logging message.
+Logger aims to provide a dead simple API based on Python's logger.
 
+Logging is performed using the ``logger`` function.
 
-All logs called with ``logger`` are declared global so it is possible to use 
-the same logger reference in different contexts with coupling the log object.
+This returns a ``Logger`` object used to log using the methods ``debug``, 
+``info``, ``warning``, ``error``, ``critical``.
 
 Log to STDOUT
 -------------
