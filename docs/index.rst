@@ -13,7 +13,7 @@ Installation
 
 Download the latest_.
 
-_latest: https://github.com/prggmr/logger/archive/master.zip
+.. _latest: https://github.com/prggmr/logger/archive/master.zip
 
 Include in configuration.
 
@@ -69,12 +69,3 @@ Creates a new logger and sends output to STDOUT and log file.
     $log->add_handler(new Handler(
         $formatter, '/tmp/foo.log'
     ));
-
-API
----
-
-.. toctree::
-   :maxdepth: 3
-   :glob:
-
-   logger
