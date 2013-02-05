@@ -95,7 +95,7 @@ LOGGER_LOG_LEVEL
 The default log level code to use when logging messages.
 
 Class - Logger
-**************
+--------------
 
 Stupid simple logging utility for XPSPL based on Pythons logger.
 
