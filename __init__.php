@@ -5,7 +5,6 @@
  * that can be found in the LICENSE file.
  */
 $dir = dirname(realpath(__FILE__));
-
 /**
  * Import logger.
  */

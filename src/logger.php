@@ -14,6 +14,10 @@ if (!defined('LOGGER_LOG_LEVEL')) {
     define('LOGGER_LOG_LEVEL', (defined('XPSPL_DEBUG') && XPSPL_DEBUG) ? 0 : 4);
 }
 
+if (!defined('LOGGER_DATE_FORMAT')) {
+    define('LOGGER_DATE_FORMAT', 'm-d-y H:i:s e');
+}
+
 /**
  * Returns a logger identified by the given name.
  *
@@ -351,7 +355,7 @@ class Formatter {
                 break;
         }
         return psprintf($this->_format, [
-            'date' => date('m-d-y H:i:s e'),
+            'date' => date(LOGGER_DATE_FORMAT),
             'message' => $message,
             'code' => $code,
             'str_code' => $str_code
