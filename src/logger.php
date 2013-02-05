@@ -32,7 +32,7 @@ function logger($name = null)
 }
 
 /**
- * Stupid simple logging utility for PHP based on Pythons logger.
+ * Stupid simple logging utility for XPSPL based on Pythons logger.
  */
 class Logger {
 
