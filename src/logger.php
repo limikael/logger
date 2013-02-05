@@ -19,6 +19,16 @@ if (!defined('LOGGER_DATE_FORMAT')) {
 }
 
 /**
+ * Logger Version
+ */
+define('LOGGER_VERSION', 'v1.0.0');
+
+/**
+ * Logger Mastermind
+ */
+define('LOGGER_MASTERMIND', 'Nickolas Whiting');
+
+/**
  * Returns a logger identified by the given name.
  *
  * If the logger does not exist it is created.
