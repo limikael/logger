@@ -92,10 +92,27 @@ LOGGER_LOG_LEVEL
 ++++++++++++++++
 LOGGER_LOG_LEVEL
 
-The default log level code to use when logging messages.
+The default log level code to use when logging.
+
+This constant must only be set once!
+
+Function - logger
+-----------------
+
+
+.. function:: logger([$name = false])
+
+
+    Returns a logger identified by the given name.
+    
+    If the logger does not exist it is created.
+
+    :param string: Name of the logger
+
+    :rtype: object Logger
 
 Class - Logger
-**************
+--------------
 
 Stupid simple logging utility for XPSPL based on Pythons logger.
 
@@ -277,7 +294,7 @@ A serious error, indicating that the program itself may be unable
 to continue running.
 
 Class - Handler
-***************
+---------------
 
 Handler
 
@@ -333,7 +350,7 @@ _make_writeable
 
 
 Class - Formatter
-*****************
+-----------------
 
 Formatter
 
@@ -379,30 +396,12 @@ format
 
 
 psprintf
-++++++++
+--------
 
 .. function:: psprintf()
 
 
     Returns a formatted string. Accepts named arguments.
-
-
-
-Function - logger
-*****************
-
-
-.. function:: logger([$name = false])
-
-
-    Returns a logger identified by the given name.
-    
-    If the logger does not exist it is created.
-
-    :param string: Name of the logger
-
-    :rtype: object Logger
-
 
 
 
