@@ -11,7 +11,7 @@ if (!defined('LOGGER_LOG_LEVEL')) {
      *
      * The default log level code to use when logging messages.
      */
-    define('LOGGER_LOG_LEVEL', 1);
+    define('LOGGER_LOG_LEVEL', (defined('XPSPL_DEBUG') && XPSPL_DEBUG) ? 0 : 4);
 }
 
 /**
